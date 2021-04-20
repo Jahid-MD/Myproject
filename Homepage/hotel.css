@@ -1,0 +1,88 @@
+.nav{
+    padding-top:10px;
+    color:white;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+.logo{
+    text-align: center;
+    font-size:30px;
+    font-weight: 600;
+    color: #ce0505;
+    width:40px;
+    height:40px;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 7px;    
+}
+.navbar-inverse .navbar-toggle:focus,.navbar-toggle:hover {
+    border-color: white;
+    background-color: #ce0505;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: white;
+    background-color: #ce0505;
+}
+.navbar-brand{
+    margin-bottom: 20px;
+}
+.navbar{
+    border-radius: 0px;
+    height: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.navbar-inverse{
+    background-color: #ce0505;
+    border-color: #ce0505;
+}
+.hotelImg{
+    
+    margin-bottom: 30px;
+}
+.hotelName{
+    font-size: 30px;
+    font-weight: 600;
+    color: #192f60;
+    font-family: poppins;
+    margin-left: 30px;
+}
+
+.btn{
+    background-color:white;
+    color:#192f60;
+    font-size:16px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 0%;
+}
+.btn:hover{
+    color:#192f60;
+}
+.btn:focus{
+    color:#192f60;
+    outline:none;
+}
+.btnP{
+    color:white;
+    background-color: #ce0505;
+    float: right;
+    font-size:14px;
+    margin-right: 4%;
+    border-radius: 8px;
+}
+.btnP:focus{
+    color:white;
+}
+.btnP:hover{
+    color:white;
+    background-color: rgb(233, 47, 47);
+    float: right;
+}
+.details{
+    margin: 3%;
+    color:#192f60;
+    display: none;
+}

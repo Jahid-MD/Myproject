@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Hotel Details</title>
+        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="hotel.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style> 
+        
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demo" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="homepage.html" class="navbar-brand ">
+                        <p class="logo">e!</p>
+                    </a>
+                </div>
+                <div id="demo" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li class="sign"><a href="#">Login</a></li>
+                        <li class="sign"><a href="#">Create account</a></li>                            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            
+            <img class="col-md-12 col-xs-12 hotelImg" style="max-width:100%;height:auto;" src="hotel.jpg" alt="">
+            <p class="hotelName">The Big Chill Cakery</p>
+            <div>
+              <button id="btnoverview" class="btn" onclick="openDetails('overview')">Overview</button>
+              <button id="btncontact"class="btn" onclick="openDetails('contact')">Contact</button>
+              <button id="btnplaceorder"class="btn btnP" onclick="">Place Online Order</button>
+            </div>
+            <div id="overview" class="details" style="display:block;">
+                <h3 style="font-weight: bold; margin-bottom: 30px ;">About this place</h3>
+                <h4>Cuisine</h4>
+                <p>Bakery, Fast-food</p>
+                <h4>Average  Cost</h4>
+                <p>Rs.700 for two people(approx.)</p>
+            </div>
+            <div id="contact" class="details">
+              <h4 >Phone Number</h4>
+              <p style="color:#ce0505;margin-bottom:30px;">+91 9512510020</p>
+              <h4 style="font-weight: bold;">The Big Chill Cakeryr</h4>
+              <p>Shop 1, Plot D, Samruddhi Complex, Chincholi, Mumbai-400002, Maharashtra</p>
+            </div>
+            <script>
+                document.getElementById('btnoverview').style.borderBottom='3px solid red';
+                function openDetails(details){
+                  var i;
+                  var x=document.getElementsByClassName('details');
+                  for(i=0;i<x.length;i++)
+                  {
+                    x[i].style.display="none";
+                  }
+                  document.getElementById(details).style.display="block";
+                  var y=document.getElementsByClassName('btn');
+                  for(i=0;i<y.length;i++)
+                  {
+                    y[i].style.borderBottom="none";
+                  }
+                  var d="btn"+details;
+                  document.getElementById(d).style.borderBottom='3px solid red ';
+                }
+            </script>
+        </div>
+    </body>
+</html>
