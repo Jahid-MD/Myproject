@@ -9,7 +9,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="loginSignUp.js"></script>
         <style> 
-        
+            .btn-danger{
+                width:100px;
+                background-color: #ce0505;
+                border-radius: 15px;
+                
+            }
+            .btn-danger:focus{
+                color:white;
+            }
         </style>
     </head>
     <body>
@@ -82,15 +90,45 @@
         </div>
           
         </div>
+        <div id="myModal3" class="modal">
+
+            <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class=" signupbox" style="background-color: white;height: auto;">
+                <form action="">
+                    <h3 class="login col-md-12">Payment</h3>
+                    
+                      <div class="form-group col-md-12">
+                          <input class="form-control " placeholder="Address"type="text">
+                      </div>
+                      <div class="form-group col-md-8 col-xs-8">
+                          <input class="form-control "placeholder="Card No." type="text">
+                      </div>
+                      <div class="form-group col-md-4 col-xs-4 ">
+                        <input class="form-control "placeholder="cvv" type="password">
+                    </div>
+                    <div class="form-group col-md-12 col-xs-12">
+                        <input class="form-control " placeholder="Name on card"type="text">
+                    </div>
+                      <center><button class="btn Button btn-danger" type="submit">Pay</button></center>
+                  </form>
+              </div>
+        </div>
+          
+        </div>
         <div class="container">
             
             <img class="col-md-12 col-xs-12 hotelImg" style="max-width:100%;height:auto;" src="hotel.jpg" alt="">
+            
             <p class="hotelName">The Big Chill Cakery</p>
+            
             <div>
-              <button id="btnoverview" class="btn" onclick="openDetails('overview')">Overview</button>
-              <button id="btncontact"class="btn" onclick="openDetails('contact')">Contact</button>
-              <button id="btnplaceorder"class="btn btnP" onclick="">Place Online Order</button>
+                <button id="btnoverview" class="btn" onclick="openDetails('overview')">Overview</button>
+                <button id="btncontact"class="btn" onclick="openDetails('contact')">Contact</button>
+                <button id="btnplaceorder"class="btn btnP" onclick="displayPlaceOrder()">Place Online Order</button>
             </div>
+            
             <div id="overview" class="details" style="display:block;">
                 <h3 style="font-weight: bold; margin-bottom: 30px ;">About this place</h3>
                 <h4>Cuisine</h4>
@@ -98,12 +136,14 @@
                 <h4>Average  Cost</h4>
                 <p>Rs.700 for two people(approx.)</p>
             </div>
+
             <div id="contact" class="details">
-              <h4 >Phone Number</h4>
-              <p style="color:#ce0505;margin-bottom:30px;">+91 9512510020</p>
-              <h4 style="font-weight: bold;">The Big Chill Cakery</h4>
-              <p>Shop 1, Plot D, Samruddhi Complex, Chincholi, Mumbai-400002, Maharashtra</p>
+                <h4 >Phone Number</h4>
+                <p style="color:#ce0505;margin-bottom:30px;">+91 9512510020</p>
+                <h4 style="font-weight: bold;">The Big Chill Cakery</h4>
+                <p>Shop 1, Plot D, Samruddhi Complex, Chincholi, Mumbai-400002, Maharashtra</p>
             </div>
+
             <script>
                 document.getElementById('btnoverview').style.borderBottom='3px solid red';
                 function openDetails(onclickdetails){
