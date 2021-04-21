@@ -5,7 +5,7 @@
     border: 1px solid gray;
 }
 .searchSignup{
-    display: inline-block;
+    
     float: right;
     margin-top: 20px;
 }
@@ -103,7 +103,7 @@
     height: 160px;
     margin-right:20px;
     margin-bottom: 26px;
-    float: left;
+    
     display: inline-block;
 }
 .tileComponent:hover{
@@ -124,7 +124,6 @@
     float: left;
 }
 .imgsize{
-
     width: 100%;
     height: 100%;
 }

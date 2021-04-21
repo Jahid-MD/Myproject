@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="loginSignUp.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <style>
+           /* Style the button that is used to open and close the collapsible content */
+            .collapsible {
+            background-color: white;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            }
+
+            /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+            .active, .collapsible:hover {
+            background-color: white;
+            }
+
+            /* Style the collapsible content. Note: hidden by default */
+            .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            }
+       </style> 
+       <link rel="stylesheet" href="filter.css">
+    </head>
+     <body class="">
+        <button type="button" class="collapsible heading2 col-md-3">Filters</button>
+        <div class="content">
+            <div class="filter col-md-3">
+                <p class="heading3">Select Location</p>
+                <div class="col-md-12 col-xs-12">
+                    <select class="selectLocation col-md-10 col-xs-10">
+                    <option>Select Location</option>
+                    </select>
+                </div>
+                
+                <div class="cuisineDiv">
+                    <p class="heading3">Cuisine</p>
+                    <div>
+                        <label class="options"for="">
+                            <input type="checkbox"></input>
+                            North Indian
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input type="checkbox"></input>
+                            South Indian
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input type="checkbox"></input>
+                            Chinese
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input type="checkbox"></input>
+                            Fast Food
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input type="checkbox"></input>
+                            Street Food
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="costDiv">
+                    <p class="heading3">Cost</p>
+                    <div>
+                        <label class="options"for="">
+                            <input name="cost" type="radio"></input>
+                            Less than Rs.500
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input name="cost" type="radio"></input>
+                            Rs.500 to Rs.1000
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input name="cost" type="radio"></input>
+                            Rs.1000 to Rs.1500
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input name="cost" type="radio"></input>
+                            Rs.1500 to Rs.2000
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input name="cost" type="radio"></input>
+                            Rs.2000+
+                        </label>
+                    </div>
+                </div>
+
+                <div class="costDiv">
+                    <p class="heading2">Sort</p>
+                    <div>
+                        <label class="options"for="">
+                            <input name="sort" type="radio"></input>
+                            Price low to high
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options"for="">
+                            <input name="sort" type="radio"></input>
+                            Price high to low
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            }
+        </script> 
+     </body>
+</html>

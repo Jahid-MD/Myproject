@@ -61,8 +61,17 @@
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     padding-top: 20px;
     margin-bottom: 20px;
+    
+}
+.filterColps{
+    background-color: white;
+    border: 1px gray;
 }
 
+.filterHeading{
+    color: #192f60;
+    height: 40px;
+}
 .selectLocation{
     margin-left:8%;
     height: 40px;
@@ -151,7 +160,17 @@ padding:0;
         padding-top: 3px;
     }
 
-
-
+    @media screen and (max-width: 991px) {
+        .filter {
+          background-color: lightgreen;
+          display: none;
+        }
+      }
+    @media screen and (min-width: 991px) {
+        .filterColps {
+          background-color: lightgreen;
+          display: none;
+        }
+      }
 
     
