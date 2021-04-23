@@ -1,0 +1,9 @@
+.btn:focus{
+    outline: none;
+}
+p{
+    color:red
+}
+#sout{
+    color:green;
+}

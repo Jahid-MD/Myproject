@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="form.css" rel="stylesheet"/>
+        <script src="form.js"></script>
+        <script>
+           
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    User details
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label  for="">UserName<span style="color:red">*</span></label>
+                        <input onblur="validateName()" class="form-control" type="text" id="name"/>
+                        <p id="nout"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label  for="">Email<span style="color:red">*</span></label>
+                            <input onblur="validateEmail()" class="form-control" type="email" id="email">
+                            <p id="eout"></p>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label  for="">Confirm Email<span style="color:red">*</span></label>
+                            <input onblur="confirmEmail()" class="form-control" type="email" id="cemail"/>
+                            <p id="ceout"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  for="">Password<span style="color:red">*</span></label>
+                        <input oninput="validatePassword()" class="form-control" type="password" id="password">
+                        <p id="pout"></p>
+                    </div>
+                    <div class="form-group">
+                        <label  for="">Confirm Password<span style="color:red">*</span></label>
+                        <input onblur="confirmPassword()" class="form-control" type="password" id="cpassword">
+                        <p id="cpout"></p>
+                    </div>
+                    <div class="form-group">
+                        <label  for="">Seats<span style="color:red">*</span></label>
+                        <p id="sout"></p>
+                        <select id ="seat" class="form-control" name="" id="" onchange="countSeats()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        
+                    </div>
+                    <button class="btn btn-success btn-block" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
