@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <title>Listingpage</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Listingpage.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+           
+            function displayFilter1()
+            {
+                if (innerWidth>990){
+                document.getElementsByClassName('filterbody')[0].style.display='block';
+                document.getElementsByClassName('btn')[1].innerHTML="<span></span>"
+                }
+            }
+            function displayFilter(){
+                var a=document.getElementsByClassName('filterbody')[0].style.display
+                
+                if (a==="block")
+                {
+                    document.getElementsByClassName('filterbody')[0].style.display='none';
+                    document.getElementsByClassName('btn')[0].innerHTML="<span class=\"glyphicon glyphicon-chevron-down\"></span>"
+                    document.getElementsByClassName('btn')[1].innerHTML="<span class=\"glyphicon glyphicon-chevron-down\"></span>"
+                    document.getElementsByClassName('hiddenbtn')[0].style.display="block"
+                }
+                else
+                {
+                    document.getElementsByClassName('filterbody')[0].style.display='block';
+                    document.getElementsByClassName('btn')[0].innerHTML="<span class=\"glyphicon glyphicon-chevron-up\"></span>"
+                    document.getElementsByClassName('btn')[1].innerHTML="<span></span>"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header">
+            <!-- small logo -->
+            <a href="../Homepage/Homepage.html">
+                <div class="smallLogo">e!</div>
+            </a>
+            <div class="signInUp">
+                <span class="text border2">Create an account</span>
+                <span class="text border1">Login</span>
+            </div>
+        </div>
+        <!--header ends-->
+        <div class="listHeading">
+            Breakfast Places in Mumbai
+        </div>
+        <div class="row">
+            <div class="filter col-md-3">
+                <div class="filterHeader">
+                    <div class="filterHeadings">
+                        Filter/Sort
+                    </div>
+                    <div class="filterDownIcon"><button onclick="displayFilter()" class="btn"><span class="glyphicon glyphicon-chevron-down"></span></button></div>
+                </div>
+                
+                <div class="filterHeader1">
+                    <div class="filterHeadings">
+                        Filter
+                    </div>
+                    <div class="filterDownIcon"><button  onclick="displayFilter1()" class="hiddenbtn btn "><span class="glyphicon glyphicon-chevron-down"></span></button></div>
+                </div>
+
+
+                <div class="filterbody">
+                    <div class="filterSubHeadings">Select Location</div>
+                    <select class=" filterLocation" name="" id="">
+                        <option value="">Select Location</option>
+                    </select>
+                    <div class="cuisine">
+                        <div class="filterSubHeadings">
+                            Cuisine
+                        </div>
+                        <div><label for="">
+                        <input type="checkbox">North Indian</label></div>
+                        <div><label for="">
+                        <input type="checkbox">South Indian</label></div>
+                        <div><label for="">
+                        <input type="checkbox">Chinese</label></div>
+                        <div><label for="">
+                        <input type="checkbox">Fast Food</label></div>
+                        <div><label for="">
+                        <input type="checkbox">Street Food</label></div>
+                    </div>
+                    <div class="cost">
+                        <div class="filterSubHeadings">
+                            Cost
+                        </div>
+                        <div id="costfiterbody">
+                            <div><label for="">
+                            <input type="radio" name='cost'>Less than Rs 500</label></div>
+                            <div><label for="">
+                            <input type="radio"  name='cost'>Rs 500 to 1000</label></div>
+                            <div><label for="">
+                            <input type="radio"  name='cost'>Rs 1000 to 1500</label></div>
+                            <div><label for="">
+                            <input type="radio"  name='cost'>Rs 1500 to 2000</label></div>
+                            <div><label for="">
+                            <input type="radio"  name='cost'>Rs 2000+</label></div>
+                        </div>
+                    </div>
+                    <div class="sort">
+                        <div class="filterHeadings">
+                            Sort
+                        </div>
+                        <div id="sortfiterbody">
+                            <div><label for="">
+                            <input type="radio" name='cost'>Price low to high</label></div>
+                            <div><label for="">
+                            <input type="radio"  name='cost'>Price high to low</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- hotel tile -->
+           <div class=" col-md-8">
+
+                <a href="../Hoteldetails/Hotel.html">
+                    <div class="hotelTileConatiner  container col-md-10 col-sm-12">
+
+                            <div class="hotelTile1">
+
+                                <div class="imageSytle col-md-4 col-sm-4 col-xs-4"></div>
+
+                                <div class="hotelText col-md-8 col-sm-8 col-xs-8">
+                                    <p class="hotelName">The Big Chill Cakery</p>
+                                    <p class="addressHead">FORT</p>
+                                    <p class="address">Shop 1, Plot D, Samruddhi Complex, Chincholi …</p>
+                                </div>
+                            </div>
+                    
+                            <div class="hotelTile2">
+                                <div class="col-md-6 col-sm-6 col-xs-6 tile2Text">
+                                    <p>
+                                        CUISINE
+                                    </p>
+                                    <p>
+                                        COST FOR TWO
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 tile2Text">
+                                    <p>
+                                        Bakery
+                                    </p>
+                                    <p>
+                                        Rs.700
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                </a>
+
+                <a href="../Hoteldetails/Hotel.html">
+                    <div class="hotelTileConatiner  container col-md-10 col-sm-12">
+
+                        <div class="hotelTile1">
+
+                            <div class="imageSytle col-md-4 col-sm-4 col-xs-4"></div>
+
+                            <div class="hotelText col-md-8 col-sm-8 col-xs-8">
+                                <p class="hotelName">The Big Chill Cakery</p>
+                                <p class="addressHead">FORT</p>
+                                <p class="address">Shop 1, Plot D, Samruddhi Complex, Chincholi …</p>
+                            </div>
+                        </div>
+                
+                        <div class="hotelTile2">
+                            <div class="col-md-6 col-sm-6 col-xs-6 tile2Text">
+                                <p>
+                                    CUISINE
+                                </p>
+                                <p>
+                                    COST FOR TWO
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 tile2Text">
+                                <p>
+                                    Bakery
+                                </p>
+                                <p>
+                                    Rs.700
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </body>
+</html>

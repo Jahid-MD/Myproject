@@ -1,0 +1,296 @@
+/* header*/
+.header{
+    background-color:#ce0505 ;
+    height: 80px;
+}
+/* Small log*/
+.smallLogo{
+    margin-left: 102px;
+    margin-top: 15px;
+    float: left;
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: white;
+    color:#ce0505;
+    font-size: 32px;
+    font-weight: bold;
+    padding-left:11px;
+}
+.signInUp{
+    float: right;
+    margin-right: 101px;
+    padding-top: 18px;
+}
+
+.text{
+    color:white;
+    font-weight: 700;
+    font-size:16px;
+}
+.border1{
+    float:right;
+    width:100px;
+    height: 46px;
+    margin-left:26px ;
+    padding-top: 11px;
+    padding-left: 12px;
+}
+.border2{
+    float:right;
+    border: solid white 1px;
+    width:181px;
+    height: 46px;
+    margin-left:26px ;
+    padding-top: 11px;
+    padding-left: 18px;
+}
+
+/* hotel lists*/
+
+.listHeading{
+    margin-top:24px;
+    margin-left:100px;
+    font-size:36px;
+    font-weight: bold;
+    color: #192f60;
+}
+/* Hotel tile */
+.hotelTileConatiner{
+    margin-bottom: 37px;
+    margin-left: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    height: 250px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.hotelTile1{
+    height: 140px;
+    margin-bottom: 10px;
+    width: 95%;
+    border-bottom: solid 1px #dedfe5;
+}
+.hotelTile2{
+    height: 100px;
+}
+/* inner content of tile*/
+.imageSytle{
+    background: url('../images/breakfast.png') no-repeat center;
+    width:120px;
+    height:120px;
+    border-radius: 15px;
+}
+.hotelText{
+    padding-left: 60px;
+}
+.hotelName{
+    font-size: 30px;
+    font-weight: bold;
+    color: #192f60;
+}
+.addressHead{
+    font-size:16px;
+    font-weight: bold;
+    color: #192f60;
+}
+.address{
+    font-size:16px;
+    color: #636f88;
+}
+
+.tile2Text{
+    color: #636f88;
+}
+
+.filter{
+    margin-left: 113px;
+    margin-bottom: 20px;
+    padding-left: 27px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    text-align: left;
+    color:#192f60 ;
+}
+.filterHeader{
+    display: none;
+    width: 100%;
+}
+.filterHeader1{
+    display: inline-block;
+    width: 100%;
+}
+.hiddenbtn{
+    display: none;
+}
+.filterDownIcon{
+    float: left;
+    padding-top: 10px;  
+}
+.btn{
+    background-color: white;
+    color:#192f60 ;
+    border: none;
+}
+.btn:hover{
+    background-color: white;
+    color:#192f60 ;
+    border: none;
+}
+.btn:focus{
+    outline: none;
+    background-color: white;
+    color:#192f60 ;
+    border: none;
+}
+
+.filterHeadings{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 80%;
+}
+.filterHeadings1{
+    
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 80%;
+}
+.filterSubHeadings{
+    margin-top: 13px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.filterLocHeadng{
+    font-weight: normal;
+}
+.filterLocation{
+    height: 35px;
+    width: 208px;
+}
+
+label{
+    color: #8c96ab;
+    font-weight: normal;
+}
+
+/* For Different Screen Size*/
+/*
+@media screen and (max-width:900px){
+   
+}
+*/
+@media screen and (max-width: 1160px){
+    .hotelName{
+        font-size: 22px;  
+    }
+    .filter{
+        margin-left: 80px;
+    }
+    .listHeading{
+    margin-left: 80px;
+    }
+}
+@media screen and (max-width: 991px){
+    .filter{
+        margin-left: 0px;
+        padding-left: 130px;
+    
+    }
+    .hotelTileConatiner{
+        margin-left: 0px;
+    }
+    .filterbody{
+        display: none;
+    }
+    .filterHeader{
+        display: inline-block;
+    }
+    .filterHeader1{
+        display: none;
+    }
+    .filterHeadings1{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .smallLogo{
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .signInUp{
+        float: right;
+        margin-right: 30px;
+        padding-top: 18px;
+    }
+    .border2{
+        margin-left:16px ;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:800px){
+    .hotelList{
+        margin-top: 0px;
+    }
+    
+    .listHeading{
+        margin: 24px;
+        font-size:34px;
+        font-weight: bold;
+        color: #192f60;
+    }
+    .hotelText{
+        padding-left: 40px;
+    }
+    .hotelName{
+        font-size: 25px;
+        font-weight: bold;
+        color: #192f60;
+    }
+    .addressHead{
+        font-size:13px;
+        font-weight: bold;
+        color: #192f60;
+    }
+    .address{
+        font-size:13px;
+        color: #636f88;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .hotelList{
+        margin-top: 0px;
+    }
+    
+    .listHeading{
+        margin-left: 115px;
+        margin-bottom: 0px;
+        font-size:22px;
+    }
+    .hotelTileConatiner{
+        margin-right: 0px; 
+    }
+
+    .hotelText{
+        padding-left: 40px;
+    }
+    .hotelName{
+        font-size: 22px;
+    
+    }
+    .addressHead{
+        font-size:14px;
+
+    }
+    .address{
+        font-size:14px;
+    }
+}

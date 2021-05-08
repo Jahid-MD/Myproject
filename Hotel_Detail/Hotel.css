@@ -1,0 +1,123 @@
+/* header*/
+.header{
+    background-color:#ce0505 ;
+    height: 80px;
+}
+/* Small log*/
+.smallLogo{
+    margin-left: 102px;
+    margin-top: 15px;
+    float: left;
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: white;
+    color:#ce0505;
+    font-size: 32px;
+    font-weight: bold;
+    padding-left:11px;
+}
+.signInUp{
+    float: right;
+    margin-right: 101px;
+    padding-top: 18px;
+}
+
+.text{
+    color:white;
+    font-weight: 700;
+    font-size:16px;
+}
+.border1{
+    float:right;
+    width:100px;
+    height: 46px;
+    margin-left:26px ;
+    padding-top: 11px;
+    padding-left: 12px;
+}
+.border2{
+    float:right;
+    border: solid white 1px;
+    width:181px;
+    height: 46px;
+    margin-left:26px ;
+    padding-top: 11px;
+    padding-left: 18px;
+}
+
+/* Hotel Image*/
+.hotelImg{
+    max-width:100%;
+    height:auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.hotelName {
+    font-size: 30px;
+    font-weight: 600;
+    color: #192f60;
+    font-family: poppins;
+    margin-left: 10px;
+}
+.detailNorder{
+    
+    font-size:18px;
+    font-weight: bold;
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 50px;
+}
+.overview{
+    text-align: center;
+    float: left;
+    width: 100px;
+    color: #192f60;
+    margin-right: 10px;
+    border-bottom: 3px solid #ce0505;
+    padding-top: 10px;
+}
+.about{
+    text-align: center;
+    float: left;
+    width: 100px;
+    color: #192f60;
+    margin-left: 40px;
+    padding-top: 10px;
+    
+}
+.placeOrder{
+    float: right;
+    margin-right:20px ;
+    
+}
+.btn-danger{
+    background-color:#ce0505;
+    border-radius: 15px;
+}
+.btn-danger:hover{
+    background-color:#d82727;
+}
+.details {
+    margin: 2%;
+    color: #192f60;
+    display: none;
+}
+@media screen and (max-width: 900px){
+    .smallLogo{
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .signInUp{
+        float: right;
+        margin-right: 30px;
+        padding-top: 18px;
+    }
+    .border2{
+        margin-left:16px ;
+    }
+    .hotelImg{
+        margin-bottom: 20px;
+    }
+}
