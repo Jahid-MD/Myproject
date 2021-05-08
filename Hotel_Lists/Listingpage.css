@@ -176,7 +176,9 @@ label{
     color: #8c96ab;
     font-weight: normal;
 }
-
+#sortfiterbody{
+    width:200px;
+}
 /* For Different Screen Size*/
 /*
 @media screen and (max-width:900px){
